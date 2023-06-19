@@ -14,6 +14,7 @@ This builds upon Andrew Shark's [AMD-Vulkan-Prefix](https://gitlab.com/AndrewSha
 ![gif](https://github.com/IranEG/GPU-Vulkan-Prefixes/blob/main/buy-why.gif)
 
 But why?
+
 Well, in my new laptop I have an Nvidia dGPU and an AMD iGPU.
 I noticed that when I used the AMD Vulkan Prefixes it would run certain games with the Radeon iGPU, but when I tried to switch to the Nvidia dGPU, I would have to set the VULKAN_ICD_FILENAMES environment variables for Nvidia manually.
 This utility should take care of that use case.
