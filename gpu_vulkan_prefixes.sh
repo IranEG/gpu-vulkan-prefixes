@@ -37,7 +37,7 @@ elif [[ $(basename $0) == vk_amdvlk ]]; then
     vk_amdvlk
 elif [[ $(basename $0) == vk_pro ]]; then
     vk_pro
-elif [[ $(basename $0) == vk_nvidia]]; then
+elif [[ $(basename $0) == vk_nvidia ]]; then
     vk_nvidia
 else
     echo "Unknown function"
