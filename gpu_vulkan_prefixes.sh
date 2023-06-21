@@ -31,6 +31,10 @@ vk_nvidia() {
     export VK_ICD_FILENAMES="${ICD_DIR}/nvidia_icd.json"
 }
 
+vk_intel() {
+    export VK_ICD_FILENAMES="${ICD_DIR}/intel_icd.x86_64.json"
+}
+
 if [[ $(basename $0) == vk_radv ]]; then
     vk_radv
 elif [[ $(basename $0) == vk_amdvlk ]]; then
@@ -39,6 +43,8 @@ elif [[ $(basename $0) == vk_pro ]]; then
     vk_pro
 elif [[ $(basename $0) == vk_nvidia ]]; then
     vk_nvidia
+elif [[ $(basename $0) == vk_intel ]]; then
+    vk_intel
 else
     echo "Unknown function"
     exit 1
